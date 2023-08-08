@@ -1,3 +1,5 @@
 roblox-itemvalues/
 .ipynb_checkpoints/
 roblox-catalog.json
+.venv
+.conda

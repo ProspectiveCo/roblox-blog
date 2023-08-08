@@ -1,0 +1,14 @@
+{
+  "plugin": "X/Y Line",
+  "plugin_config": { "zoom": { "k": 1, "x": 0, "y": 0 } },
+  "settings": true,
+  "theme": "Pro Light",
+  "title": "Item Trade History",
+  "group_by": [],
+  "split_by": [],
+  "columns": ["index", "average_price", "devex value (USD)", "volume", "date"],
+  "filter": [],
+  "sort": [],
+  "expressions": ["// devex value (USD)\n\"average_price\" * 0.0035"],
+  "aggregates": {}
+}
