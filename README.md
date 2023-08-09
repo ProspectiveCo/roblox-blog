@@ -1,26 +1,28 @@
 # Roblox Trade Analysis
 
-This is a simple python project which utilizes [Perspective](https://github.com/finos/perspective) to visualize data across the Roblox economy.
+This is a simple python project which utilizes [Perspective](https://github.com/finos/perspective) and Jupyter Lab to visualize data across the Roblox economy.
 This repo is an accessory to a blog post. Read it [here](TODO).
 
-Much of the data is scrape from the [rblx.trade APIs](https://rblx.trade/docs/index.html#/).
-This data is cross-referenced with data scraped from the [official Roblox APIs](https://github.com/matthewdean/roblox-web-apis).
+Much of the data is scraped from the [rblx.trade APIs](https://rblx.trade/docs/index.html#/).
+
+---
 
 Widgets included:
 
-- Overvalued items
--
+- RAP x Popularity
+- log(RAP) x Popularity colored by Rarity
+- Overvalued items with differential
+- Trade history per item
+  - Includes Devex USD value
+- Historical regression; Fedoras are hot right now!
 
-TODO:
-Finish the blog post and reach out to the rblx.trade people. Show them the post, then ask if we can use the websocket that powers their bots to do live data analysis.
-
-Some cool ideas:
+Some features:
 
 - Exprtk for Regressing on USD value
-- Exprtk for matching roblox item name (e.g. dominus, meme shit)
-- Filter by asset type by cross-referencing roblox API
-- Metrics from asset trade history
--
+- Exprtk for matching roblox item name
 
-Some things to research:
-What's with the gap between dec 2019 and jan 2021?
+Future ideas:
+
+- Filter by asset type by cross-referencing the [official Roblox APIs](https://github.com/matthewdean/roblox-web-apis)
+- Coalesce metrics from trade history into the catalog
+- Websocket connection for live trade info
