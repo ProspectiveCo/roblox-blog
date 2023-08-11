@@ -1,1 +1,30 @@
-{"plugin":"X/Y Scatter","plugin_config":{"hideKeys":[],"legend":{"left":"66px","top":"10px"},"zoom":{"k":1,"x":0,"y":0}},"settings":true,"theme":"Pro Light","title":"overvalued","group_by":[],"split_by":[],"columns":["popularity_position","abs(rap-val)","overvalued_str",null,null,"roblox_name","roblox_assetid"],"filter":[["rap - value","!=",0.0]],"sort":[["rap - value","asc"]],"expressions":["// rap - value\n\"roblox_rap\" - \"roblox_value\"","// overvalued_str\nif (\"roblox_rap\" - \"roblox_value\" > 0)\n{'Overvalued'} else {'Not Overvalued'}","// abs(rap-val)\nabs(\"roblox_rap\" - \"roblox_value\")"],"aggregates":{}}
+{
+  "plugin": "X/Y Scatter",
+  "plugin_config": {
+    "hideKeys": [],
+    "legend": { "left": "66px", "top": "10px" },
+    "zoom": { "k": 1, "x": 0, "y": 0 }
+  },
+  "settings": false,
+  "theme": "Pro Light",
+  "title": "overvalued",
+  "group_by": [],
+  "split_by": [],
+  "columns": [
+    "popularity_position",
+    "abs(rap-val)",
+    "overvalued_str",
+    null,
+    null,
+    "roblox_name",
+    "roblox_assetid"
+  ],
+  "filter": [["rap - value", "!=", 0.0]],
+  "sort": [["rap - value", "asc"]],
+  "expressions": [
+    "// rap - value\n\"roblox_rap\" - \"roblox_value\"",
+    "// overvalued_str\nif (\"roblox_rap\" - \"roblox_value\" > 0)\n{'Overvalued'} else {'Not Overvalued'}",
+    "// abs(rap-val)\nabs(\"roblox_rap\" - \"roblox_value\")"
+  ],
+  "aggregates": {}
+}

@@ -1,1 +1,26 @@
-{"plugin":"X/Y Scatter","plugin_config":{"zoom":{"k":1,"x":0,"y":0}},"settings":true,"theme":"Pro Light","title":"rare items","group_by":[],"split_by":["measure"],"columns":["popularity_position","log(rap)","measure",null,null,"roblox_name","roblox_assetid","roblox_rap"],"filter":[["roblox_rap","!=",0.0]],"sort":[["measure","none"]],"expressions":["//log(rap)\nlog(\"roblox_rap\")","// measure\nstring(\"is_rare\")"],"aggregates":{}}
+{
+  "plugin": "X/Y Scatter",
+  "plugin_config": { "zoom": { "k": 1, "x": 0, "y": 0 } },
+  "settings": false,
+  "theme": "Pro Light",
+  "title": "rare items",
+  "group_by": [],
+  "split_by": ["measure"],
+  "columns": [
+    "popularity_position",
+    "log(rap)",
+    "measure",
+    null,
+    null,
+    "roblox_name",
+    "roblox_assetid",
+    "roblox_rap"
+  ],
+  "filter": [["roblox_rap", "!=", 0.0]],
+  "sort": [["measure", "none"]],
+  "expressions": [
+    "//log(rap)\nlog(\"roblox_rap\")",
+    "// measure\nstring(\"is_rare\")"
+  ],
+  "aggregates": {}
+}

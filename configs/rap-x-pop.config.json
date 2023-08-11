@@ -1,1 +1,28 @@
-{"plugin":"X/Y Scatter","plugin_config":{"zoom":{"k":1,"x":0,"y":0}},"settings":true,"theme":"Pro Light","title":"rap x popularity","group_by":[],"split_by":[],"columns":["popularity_position","roblox_rap",null,null,null,"Devex RAP (USD)","roblox_value","Devex Value (USD)","roblox_name","roblox_assetid"],"filter":[],"sort":[],"expressions":["// Devex RAP (USD)\n\"roblox_rap\" * 0.0035","// Devex Value (USD)\n\"roblox_value\" * 0.0035"],"aggregates":{}}
+{
+  "plugin": "X/Y Scatter",
+  "plugin_config": { "zoom": { "k": 1, "x": 0, "y": 0 } },
+  "settings": false,
+  "theme": "Pro Light",
+  "title": "rap x popularity",
+  "group_by": [],
+  "split_by": [],
+  "columns": [
+    "popularity_position",
+    "roblox_rap",
+    null,
+    null,
+    null,
+    "Devex RAP (USD)",
+    "roblox_value",
+    "Devex Value (USD)",
+    "roblox_name",
+    "roblox_assetid"
+  ],
+  "filter": [],
+  "sort": [],
+  "expressions": [
+    "// Devex RAP (USD)\n\"roblox_rap\" * 0.0035",
+    "// Devex Value (USD)\n\"roblox_value\" * 0.0035"
+  ],
+  "aggregates": {}
+}
