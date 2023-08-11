@@ -4,9 +4,6 @@ import "https://cdn.jsdelivr.net/npm/@finos/perspective-viewer-d3fc@2.3.2/dist/c
 import "https://cdn.jsdelivr.net/npm/@finos/perspective-viewer-datagrid@2.3.2/dist/cdn/perspective-viewer-datagrid.js";
 import "https://cdn.jsdelivr.net/npm/@finos/perspective-viewer-openlayers@2.3.2/dist/cdn/perspective-viewer-openlayers.js";
 
-const wrapper = document.createElement("div");
-wrapper.id = "psp-wrapper";
-document.body.appendChild(wrapper);
 const worker = perspective.worker();
 const table_map = {};
 const config_map = {};
@@ -27,7 +24,11 @@ export async function load_configs(url, configNames) {
   }
 }
 
-export async function load_workspace(views) {
+export async function load_workspace(id, views) {
+  const parent = document.currentScript.parentElement;
+  const wrapper = document.createElement("div");
+  wrapper.id = id;
+  parent.appendChild(wrapper);
   for (let [name, view] of Object.entries(views)) {
     const viewer = document.createElement("perspective-viewer");
     viewer.load(table_map[view.table]);
