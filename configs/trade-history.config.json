@@ -1,7 +1,7 @@
 {
   "plugin": "X/Y Line",
   "plugin_config": { "zoom": { "k": 1, "x": 0, "y": 0 } },
-  "settings": true,
+  "settings": false,
   "theme": "Pro Light",
   "title": "Item Trade History",
   "group_by": [],
